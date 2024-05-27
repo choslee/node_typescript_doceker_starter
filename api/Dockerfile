@@ -14,4 +14,7 @@ RUN npm ci --only=production
 # Kopiramo sve fajlove iz trenutnog direktorijuma u radni direktorijum
 COPY . .
 
+# Expose port (dodajte port na kojem vaš server sluša, npr. 3000)
+EXPOSE 3000
+
 CMD [ "npm", "run", "dev" ]

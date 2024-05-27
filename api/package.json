@@ -6,7 +6,10 @@
   "scripts": {
     "start": "ts-node src/app.ts --env-file=.env.production",
     "build": "tsc",
-    "dev": "nodemon --watch src --exec ts-node src/app.ts --env-file=.env.development"
+    "dev": "nodemon --watch src --exec ts-node src/app.ts --env-file=.env.development",
+    "docker:build": "docker build -t starter_node:latest .",
+    "docker:run": "docker run --name node_api starter_node:latest",
+    "docker:stop": "docker stop node_api && docker container prune -f"
   },
   "keywords": [],
   "author": "",

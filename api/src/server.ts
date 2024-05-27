@@ -15,6 +15,6 @@ export  function startServer (): void {
 
     // Pokretanje servera
     server.listen(port, () => {
-        console.log(`Server running at http://${hostname}:${port}/`);
+        console.log(`Server je pokrenut!!! Pristupi mu na http://${hostname}:${port}/`);
     });
 };
